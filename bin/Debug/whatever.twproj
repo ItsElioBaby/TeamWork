@@ -1,0 +1,32 @@
+// TeamWork Project File.
+// Version: 2.0+
+// Release Date: -  (MM/DD/YYY)
+
+
+// ADD COMMENTS ONLY IN A NEW LINE!!!
+
+// CHANGELOG:
+//
+// 2.0+:
+// - Folders can now be added as file storage.
+// - Custom languages.
+// - New line formatting for the description.
+// - Added project version.
+//
+// 2.0:
+// - Initial release.
+//
+
+// ---------------------------------------------------- Start Project File
+
+// Project General Information Section
+Name='Test Project'
+Authors='Author1,Author2,Author3'
+Description='This is a testing project.%$20I'm adding some fancy new lines here for ya'll !!!%$20:D'
+Website='www.testing-project.com'      // Without  "http://".
+Language='C#'               // Programming language used.
+MasterKey='1'  //Edit this as you wish. (Number only)
+Version='1.0.0.a'
+
+// Files Section
+Folder='D:\projects\Projects and stuff\New folder\twlib'

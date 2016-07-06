@@ -1,0 +1,170 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.IO;
+
+namespace ek
+{
+    public struct ObjektShitjeje
+    {
+        public string Emri;
+        public ObjektShitjeje(string n) { Emri = n; }
+    }
+    
+    public void TestingFuction(int a, int b)
+    {
+        Console.Write(a + b * ((a^b) % (b^a)));
+    }
+
+    public class Shporte
+    {
+        private Dictionary<ObjektShitjeje, VlereMonetare> shporta = new Dictionary<ObjektShitjeje, VlereMonetare>();
+        private LlojiParave t;
+
+        public Dictionary<ObjektShitjeje, VlereMonetare> Shporta { get { return shporta; } }
+
+        public Shporte(LlojiParave tipiParave)
+        {
+            t = tipiParave;
+        }
+
+        public void ShtoObjekt(string emri, float sasia, float faktoriPercaktues)
+        {
+            VlereMonetare vm = new VlereMonetare(sasia, t);
+            vm.KembeVleren(faktoriPercaktues, t);
+            shporta.Add(new ObjektShitjeje(emri), vm);
+        }
+
+        public void HiqObjekt(string emri)
+        {
+            for (int i = 0; i < shporta.Count; i++)
+            {
+                if (shporta.Keys.ElementAt(i).Emri == emri)
+                {
+                    shporta.Remove(shporta.Keys.ElementAt(i));
+                    break;
+                }
+            }
+        }
+
+        public float LlogaritVlerenTotale()
+        {
+            float x = 0.0f;
+            foreach (var v in shporta)
+            {
+                x += v.Value.Sasia;
+            }
+            return x;
+        }
+    }
+
+    public class FaturBaze
+    {
+        private string emriKlientit;
+        private string emriShitesit;
+
+        private DateTime data;
+
+        private float vleraPaguar;
+
+        public string EmriKlientit { get { return emriKlientit; } }
+        public string EmriShitesit { get { return emriShitesit; } }
+        public DateTime DataKryerjes { get { return data; } }
+        public float VleraPaguar { get { return vleraPaguar; } }
+
+        public FaturBaze(string ek, string esh, DateTime d, float vp)
+        {
+            emriShitesit = esh;
+            emriKlientit = ek;
+            data = d;
+            vleraPaguar = vp;
+        }
+
+
+    }
+
+    public class FaturBlerjeje : FaturBaze
+    {
+        private Shporte listaObjekteve;
+        public string Lloji { get { return "Blerje"; } }
+
+        private FaturBlerjeje(Shporte s, string emriShitesit, string emriBleresit,
+            DateTime data)
+            : base(emriBleresit, emriShitesit, data, s.LlogaritVlerenTotale())
+        {
+            listaObjekteve = s;
+        }
+
+        public Shporte ListaObjekteve { get { return listaObjekteve; } }
+
+        public static FaturBlerjeje KrijoFatur(Shporte objektetBlera, string emriShitesit, string emriBleresit, DateTime data)
+        {
+            return new FaturBlerjeje(objektetBlera, emriShitesit, emriBleresit, data);
+        }
+
+        public string PergatitTabelHTML()
+        {
+            StringBuilder strb = new StringBuilder();
+            strb.AppendLine("<table border=\"2\">");
+            strb.AppendLine("<caption>Fatur Blerjeje</caption>");
+            strb.AppendLine("<tr>");
+            strb.AppendLine("<th>Emri Objektit</th> <th>Emri Shitesit</th> <th>Emri Bleresit</th> <th>Data e kryerjes</th> <th>Vlera</th>");
+            strb.AppendLine("</tr>");
+            foreach (var v in listaObjekteve.Shporta)
+            {
+                string emriObjektit = v.Key.Emri;
+                string vlera = v.Value.Sasia.ToString() + " " + Enum.GetName(typeof(LlojiParave), v.Value.Lloji);
+                strb.AppendLine("<tr>");
+                strb.AppendLine("<td>" + emriObjektit + "</td> <td>" + EmriShitesit + "</td> <td>" + EmriKlientit + "</td> <td>" + DataKryerjes.ToShortDateString() + "</td> <td>" + vlera + "</td>");
+                strb.AppendLine("</tr>");
+            }
+            strb.AppendLine("<tr><td><b>Vlera Totale: <i>" + listaObjekteve.LlogaritVlerenTotale().ToString() + " " + Enum.GetName(typeof(LlojiParave), listaObjekteve.Shporta.ElementAt(0).Value.Lloji) + "</i></b></td></tr>"); 
+            strb.AppendLine("</table>");
+            return strb.ToString();
+        }
+
+    }
+
+    public class FaturShitjeje : FaturBaze
+    {
+        private Shporte listaObjekteve;
+        public string Lloji { get { return "Shitje"; } }
+
+        private FaturShitjeje(Shporte s, string emriShitesit, string emriBleresit,
+            DateTime data)
+            : base(emriBleresit, emriShitesit, data, s.LlogaritVlerenTotale())
+        {
+            listaObjekteve = s;
+        }
+
+        public Shporte ListaObjekteve { get { return listaObjekteve; } }
+
+        public static FaturShitjeje KrijoFatur(Shporte objektetBlera, string emriShitesit, string emriBleresit, DateTime data)
+        {
+            return new FaturShitjeje(objektetBlera, emriShitesit, emriBleresit, data);
+        }
+
+        public string PergatitTabelHTML()
+        {
+            StringBuilder strb = new StringBuilder();
+            strb.AppendLine("<table border=\"1\">");
+            strb.AppendLine("<caption>Fatur Shitjeje</caption>");
+            strb.AppendLine("<tr>");
+            strb.AppendLine("<th>Emri Objektit</th> <th>Emri Shitesit</th> <th>Emri Bleresit</th> <th>Data e kryerjes</th> <th>Vlera</th>");
+            strb.AppendLine("</tr>");
+            foreach (var v in listaObjekteve.Shporta)
+            {
+                string emriObjektit = v.Key.Emri;
+                string vlera = v.Value.Sasia.ToString() + " " + Enum.GetName(typeof(LlojiParave), v.Value.Lloji);
+                strb.AppendLine("<tr>");
+                strb.AppendLine("<td>" + emriObjektit + "</td> <td>" + EmriShitesit + "</td> <td>" + EmriKlientit + "</td> <td>" + DataKryerjes.ToShortDateString() + "</td> <td>" + vlera + "</td>");
+                strb.AppendLine("</tr>");
+            }
+            strb.AppendLine("<tr><td><b>Vlera Totale: <i>" + listaObjekteve.LlogaritVlerenTotale().ToString() + " " + Enum.GetName(typeof(LlojiParave), listaObjekteve.Shporta.ElementAt(0).Value.Lloji) + "</i></b></td></tr>"); 
+            strb.AppendLine("</table>");
+            return strb.ToString();
+        }
+    }
+}
+

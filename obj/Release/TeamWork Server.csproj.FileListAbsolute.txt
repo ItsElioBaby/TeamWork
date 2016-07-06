@@ -1,0 +1,23 @@
+C:\Users\Elio\Desktop\New folder\TeamWork Server\bin\Release\TeamWork Server.exe.config
+C:\Users\Elio\Desktop\New folder\TeamWork Server\bin\Release\TeamWork Server.exe
+C:\Users\Elio\Desktop\New folder\TeamWork Server\bin\Release\TeamWork Server.pdb
+C:\Users\Elio\Desktop\New folder\TeamWork Server\bin\Release\Newtonsoft.Json.dll
+C:\Users\Elio\Desktop\New folder\TeamWork Server\bin\Release\twlib.dll
+C:\Users\Elio\Desktop\New folder\TeamWork Server\obj\Release\TeamWork Server.csprojResolveAssemblyReference.cache
+C:\Users\Elio\Desktop\New folder\TeamWork Server\obj\Release\TeamWork Server.exe
+C:\Users\Elio\Desktop\New folder\TeamWork Server\obj\Release\TeamWork Server.pdb
+D:\Projects and stuff\New folder\TeamWork Server\bin\Release\TeamWork Server.exe.config
+D:\Projects and stuff\New folder\TeamWork Server\obj\Release\TeamWork Server.exe
+D:\Projects and stuff\New folder\TeamWork Server\obj\Release\TeamWork Server.pdb
+D:\Projects and stuff\New folder\TeamWork Server\bin\Release\TeamWork Server.exe
+D:\Projects and stuff\New folder\TeamWork Server\bin\Release\TeamWork Server.pdb
+D:\Projects and stuff\New folder\TeamWork Server\obj\Release\TeamWork Server.csprojResolveAssemblyReference.cache
+D:\projects\Projects and stuff\New folder\TeamWork Server\bin\Release\TeamWork Server.exe.config
+D:\projects\Projects and stuff\New folder\TeamWork Server\obj\Release\TeamWork Server.exe
+D:\projects\Projects and stuff\New folder\TeamWork Server\obj\Release\TeamWork Server.pdb
+D:\projects\Projects and stuff\New folder\TeamWork Server\obj\Release\TeamWork Server.csprojResolveAssemblyReference.cache
+D:\projects\Projects and stuff\New folder\TeamWork Server\obj\Release\TeamWork_Server.Server.resources
+D:\projects\Projects and stuff\New folder\TeamWork Server\obj\Release\TeamWork Server.csproj.GenerateResource.Cache
+D:\projects\Projects and stuff\New folder\TeamWork Server\bin\Release\TeamWork Server.exe
+D:\projects\Projects and stuff\New folder\TeamWork Server\bin\Release\TeamWork Server.pdb
+D:\projects\Projects and stuff\New folder\TeamWork Server\bin\Release\MetroFramework.dll

@@ -1,0 +1,22 @@
+C:\Users\Elio\Desktop\New folder\TeamWork Server\bin\Debug\TeamWork Server.exe.config
+C:\Users\Elio\Desktop\New folder\TeamWork Server\obj\Debug\TeamWork Server.exe
+C:\Users\Elio\Desktop\New folder\TeamWork Server\obj\Debug\TeamWork Server.pdb
+C:\Users\Elio\Desktop\New folder\TeamWork Server\obj\Debug\TeamWork Server.csprojResolveAssemblyReference.cache
+C:\Users\Elio\Desktop\New folder\TeamWork Server\bin\Debug\TeamWork Server.exe
+C:\Users\Elio\Desktop\New folder\TeamWork Server\bin\Debug\TeamWork Server.pdb
+C:\Users\Elio\Desktop\New folder\TeamWork Server\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Elio\Desktop\New folder\TeamWork Server\bin\Debug\twlib.dll
+D:\Projects and stuff\New folder\TeamWork Server\bin\Debug\TeamWork Server.exe.config
+D:\Projects and stuff\New folder\TeamWork Server\obj\Debug\TeamWork Server.exe
+D:\Projects and stuff\New folder\TeamWork Server\obj\Debug\TeamWork Server.pdb
+D:\projects\Projects and stuff\New folder\TeamWork Server\bin\Debug\TeamWork Server.exe.config
+D:\projects\Projects and stuff\New folder\TeamWork Server\bin\Debug\TeamWork Server.exe
+D:\projects\Projects and stuff\New folder\TeamWork Server\bin\Debug\TeamWork Server.pdb
+D:\projects\Projects and stuff\New folder\TeamWork Server\bin\Debug\MetroFramework.dll
+D:\projects\Projects and stuff\New folder\TeamWork Server\obj\Debug\TeamWork Server.csprojResolveAssemblyReference.cache
+D:\projects\Projects and stuff\New folder\TeamWork Server\obj\Debug\TeamWork_Server.Server.resources
+D:\projects\Projects and stuff\New folder\TeamWork Server\obj\Debug\TeamWork Server.csproj.GenerateResource.Cache
+D:\projects\Projects and stuff\New folder\TeamWork Server\obj\Debug\TeamWork Server.exe
+D:\projects\Projects and stuff\New folder\TeamWork Server\obj\Debug\TeamWork Server.pdb
+D:\projects\Projects and stuff\New folder\TeamWork Server\bin\Debug\twlib.dll
+D:\projects\Projects and stuff\New folder\TeamWork Server\bin\Debug\twlib.pdb

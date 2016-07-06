@@ -1,0 +1,13 @@
+2016-07-06 12:45:59 - DEBUG: Using RCON Password: 123
+2016-07-06 12:45:59 - INFO: Parsing users, this may take a while...
+2016-07-06 12:45:59 - INFO: Using TWPROJ configuration file:
+     ->whatever
+2016-07-06 12:45:59 - DEBUG: Redirection Service is now available!
+2016-07-06 12:45:59 - DEBUG: Chat Service is online.
+2016-07-06 12:45:59 - INFO: Parsed role "Administrator"
+2016-07-06 12:45:59 - INFO: Parsed role "Coder"
+2016-07-06 12:45:59 - INFO: Parsed role "Designer"
+2016-07-06 12:45:59 - INFO: Parsed role "Guest"
+2016-07-06 12:45:59 - INFO: Parsed role "User"
+2016-07-06 12:45:59 - ERROR: Couldn't reach master server. Your project is not visible online. :(
+2016-07-06 12:46:10 - INFO: Dumping users data... (this may take a while)

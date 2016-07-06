@@ -1,0 +1,10 @@
+2015-12-29 18:57:36 - INFO: Subscriptions file found! Initialized Subscriptions data grouper.
+2015-12-29 18:57:36 - DEBUG: Using RCON Password: 123
+2015-12-29 18:57:36 - INFO: Parsing users, this may take a while...
+2015-12-29 18:57:36 - Program: INFO: Using TWPROJ configuration file:
+     ->whatever
+2015-12-29 18:57:37 - HttpService: INFO: HTTP status has been set to True
+2015-12-29 18:57:38 - DEBUG: Redirection Service is now available!
+2015-12-29 18:57:38 - DEBUG: RCON Handler Is Now Operating
+2015-12-29 18:57:38 - DEBUG: Subscription Service Is Now Operating
+2015-12-29 18:57:38 - DEBUG: Chat Service is online.

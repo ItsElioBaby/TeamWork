@@ -1,0 +1,21 @@
+//TeamWork Project File.
+//Version: 2.0
+//Release Date: 8/3/2013  (MM/DD/YYY)
+
+
+// ADD COMMENTS ONLY IN A NEW LINE!!!
+
+// ---------------------------------------------------- Start Project File
+
+// Project General Information Section...
+Name='Test Project'
+Authors='Author1,Author2,Author3'
+Description='This is a testing project.'
+Website='www.testing-project.com
+Language='C#'
+MasterKey='1'
+
+
+// Files Section...
+File='D:\Projects and stuff\Projects\Basic Economy\Basic Ecomony\ek\Buxheti.cs'
+File='D:\Projects and stuff\Projects\Basic Economy\Basic Ecomony\ek\Fatur.cs'
